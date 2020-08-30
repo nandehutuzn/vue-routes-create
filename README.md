@@ -3,7 +3,7 @@
 
 ### 示例
 ```
-pages
+src/pages
 
 |   REAMME.md
 |   package.json
@@ -18,6 +18,21 @@ pages
 |               |   index.vue
 |               |   _id.vue
 |               |   your.vue
+
+```
+```
+
+src/router/index.js
+
+import Router from 'vue-router'
+const craete = require('vue-routes-create')
+
+const rootFile = '../pages'
+const rc = require.context(rootFile, true, /\.vue$/)
+
+export default new Router({
+  routes: create({ rc, rootFile})
+})
 
 ```
 
