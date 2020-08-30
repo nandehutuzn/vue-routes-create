@@ -1,5 +1,4 @@
 const { resolve } = require('path')
-const { error } = require('console')
 
 // rc 参数通过 rc = require.context(dir, true, /\.vue$/) 方式获得
 module.exports = ({ rc, rootFile }) => {
