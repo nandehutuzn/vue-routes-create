@@ -1,13 +1,17 @@
 {
   "name": "vue-routes-create",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "自动生成 vue-router 中的 routes",
   "repository": "https://github.com/nandehutuzn/vue-routes-create",
+  "keywords": [
+    "vue-router",
+    "craete",
+    "auto"
+  ],
   "main": "src/index.js",
   "scripts": {
     "test": "node test/index.js"
   },
-  "keywords": [],
   "author": "zhang.ning",
   "license": "ISC",
   "devDependencies": {
