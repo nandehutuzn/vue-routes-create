@@ -57,7 +57,7 @@ module.exports = ({ rc, rootFile }) => {
     const preIndex = index - 1
     allRouters[`len${index}`].forEach(item => {
       // 遍历 index 层路由，并寻找它们的负路由（根据路由前缀查找）
-      let parent = allRouters[`len${preIndex}`].find(i => item.path.startsWith(i.path) && i.path !== '/')
+      let parent = allRouters[`len${preIndex}`].find(i => item.path.startsWith(`${i.path}/`))
       if(parent) {
         // 在上一层目录找到父路由
         parent.children.push(item)
